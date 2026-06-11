@@ -1,0 +1,735 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='sink_furniture'>
+    <link name='base_link'>
+      <pose>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0.341839 0.004907 0.283661 0 -0 0</pose>
+        <mass>80</mass>
+        <inertia>
+          <ixx>13.1429</ixx>
+          <ixy>-0.127112</ixy>
+          <ixz>-12.9504</ixz>
+          <iyy>28.0802</iyy>
+          <iyz>-0.0874853</iyz>
+          <izz>17.9537</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>100 100 100</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_kitchen.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__washer_link_visual_1'>
+        <pose>-0.09 0.001 0.581 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_lavadora.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='base_link_collision'>
+          <pose>0 0 0 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>100 100 100</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_kitchen.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='base_link_fixed_joint_lump__washer_link_collision_1'>
+          <pose>-0.09 0.001 0.581 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_lavadora.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <link name='dishrack_1_link'>
+      <pose>-0.897 0.035 0.487 0 -0 0</pose>
+      <inertial>
+        <pose>-0 0.001017 0.024848 0 -0 0</pose>
+        <mass>5</mass>
+        <inertia>
+          <ixx>0.0896811</ixx>
+          <ixy>-4.20102e-09</ixy>
+          <ixz>-2.01219e-09</ixz>
+          <iyy>0.141374</iyy>
+          <iyz>-0.0042403</iyz>
+          <izz>0.0985203</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='dishrack_1_link_visual'>
+        <pose>0 0 0 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_parte_de_abajo_lavavajillas.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <visual name='dishrack_1_link_fixed_joint_lump__silverware_link_visual_1'>
+        <pose>0 -0.01 0.05 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_cubiertos_lavavajillas.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='dishrack_1_link_collision'>
+          <pose>0 0 0 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_parte_de_abajo_lavavajillas.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <collision name='dishrack_1_link_fixed_joint_lump__silverware_link_collision_1'>
+          <pose>0 -0.01 0.05 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_cubiertos_lavavajillas.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <link name='dishrack_2_link'>
+      <pose>-0.897 0.035 0.792 0 -0 0</pose>
+      <inertial>
+        <pose>0.008706 -0.004417 0.026342 0 -0 0</pose>
+        <mass>3</mass>
+        <inertia>
+          <ixx>0.0695101</ixx>
+          <ixy>2.372e-05</ixy>
+          <ixz>4.623e-05</ixz>
+          <iyy>0.128744</iyy>
+          <iyz>0.00035407</iyz>
+          <izz>0.0707099</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='dishrack_2_link_visual'>
+        <pose>0 0 0 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_parte_de_arriba_lavavajillas.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='dishrack_2_link_collision'>
+          <pose>0 0 0 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_parte_de_arriba_lavavajillas.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <link name='door_1_link'>
+      <pose>-0.591 -0.325 0.594 0 -0 0</pose>
+      <inertial>
+        <pose>0.234309 0.296772 0.013344 0 -0 0</pose>
+        <mass>3</mass>
+        <inertia>
+          <ixx>0.146762</ixx>
+          <ixy>-0.00813386</ixy>
+          <ixz>-0.00130403</ixz>
+          <iyy>0.079376</iyy>
+          <iyz>-0.00166311</iyz>
+          <izz>0.225484</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='door_1_link_visual'>
+        <pose>0.3 0 0 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_armario_lavamanos.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='door_1_link_collision'>
+          <pose>0.3 0 0 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_armario_lavamanos.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <link name='door_2_link'>
+      <pose>-0.899 -0.293 0.344 0 -0 0</pose>
+      <inertial>
+        <pose>0 0.354086 0.044429 0 -0 0</pose>
+        <mass>8</mass>
+        <inertia>
+          <ixx>0.430657</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.231769</iyy>
+          <iyz>-0.00532904</iyz>
+          <izz>0.650277</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='door_2_link_visual'>
+        <pose>0 0 0.25 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_puerta_lavavajillas.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='door_2_link_collision'>
+          <pose>0 0 0.254 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_puerta_lavavajillas.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <link name='drawer_1_link'>
+      <pose>0.311 -0.066 0.895 0 -0 0</pose>
+      <inertial>
+        <pose>0.005449 0.058284 0.255974 0 -0 0</pose>
+        <mass>5</mass>
+        <inertia>
+          <ixx>0.133959</ixx>
+          <ixy>6e-06</ixy>
+          <ixz>0.00125108</ixz>
+          <iyy>0.259147</iyy>
+          <iyz>-0.00124005</iyz>
+          <izz>0.149073</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='drawer_1_link_visual'>
+        <pose>0 0 0 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_cajon_1.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='drawer_1_link_collision'>
+          <pose>0 0 0 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_cajon_1.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <link name='drawer_2_link'>
+      <pose>0.311 -0.066 0.694 0 -0 0</pose>
+      <inertial>
+        <pose>0.005449 0.060122 0.255974 0 -0 0</pose>
+        <mass>5</mass>
+        <inertia>
+          <ixx>0.133965</ixx>
+          <ixy>5.99e-06</ixy>
+          <ixz>0.00125106</ixz>
+          <iyy>0.259148</iyy>
+          <iyz>-0.00126118</iyz>
+          <izz>0.149077</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='drawer_2_link_visual'>
+        <pose>0 0 0 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_cajon_2.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='drawer_2_link_collision'>
+          <pose>0 0 0 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_cajon_2.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <link name='drawer_3_link'>
+      <pose>0.311 -0.066 0.392 0 -0 0</pose>
+      <inertial>
+        <pose>0.005449 0.146757 0.255974 0 -0 0</pose>
+        <mass>7</mass>
+        <inertia>
+          <ixx>0.229778</ixx>
+          <ixy>0.00021958</ixy>
+          <ixz>0.00169859</ixz>
+          <iyy>0.358769</iyy>
+          <iyz>-0.0238841</iyz>
+          <izz>0.256006</izz>
+        </inertia>
+      </inertial>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <visual name='drawer_3_link_visual'>
+        <pose>0 0 0 1.5714 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://sink_furniture/meshes/kitchen_only_cajon_grande.obj</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <shader type='pixel'/>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='drawer_3_link_collision'>
+          <pose>0 0 0 1.5714 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://sink_furniture/meshes/kitchen_only_cajon_grande.obj</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+    </link>
+    <joint name='dishrack_1_joint' type='prismatic'>
+      <parent>base_link</parent>
+      <child>dishrack_1_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.5</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='dishrack_2_joint' type='prismatic'>
+      <parent>base_link</parent>
+      <child>dishrack_2_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.5</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='door_1_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>door_1_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>2</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='door_2_joint' type='revolute'>
+      <parent>base_link</parent>
+      <child>door_2_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>1.6</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='drawer_1_joint' type='prismatic'>
+      <parent>base_link</parent>
+      <child>drawer_1_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.4</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='drawer_2_joint' type='prismatic'>
+      <parent>base_link</parent>
+      <child>drawer_2_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.4</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <joint name='drawer_3_joint' type='prismatic'>
+      <parent>base_link</parent>
+      <child>drawer_3_link</child>
+      <pose>0 0 0 0 -0 0</pose>
+      <axis>
+        <xyz>0 -1 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0.4</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+          <damping>0</damping>
+          <friction>0</friction>
+        </dynamics>
+      </axis>
+      <physics>
+        <ode>
+          <limit>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </limit>
+          <suspension>
+            <cfm>0</cfm>
+            <erp>0.2</erp>
+          </suspension>
+        </ode>
+      </physics>
+    </joint>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

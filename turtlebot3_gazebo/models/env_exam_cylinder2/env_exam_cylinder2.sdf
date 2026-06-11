@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<sdf version="1.4">
+  <model name="env_exam_cylinder2">
+    <static>true</static>
+    <link name="link">
+
+    <gravity>0</gravity>
+    
+      <inertial>
+        <mass>1.0</mass>
+        <inertia>
+          <ixx>0.00036395833</ixx> <ixy>0.0</ixy> <ixz>0.0</ixz>
+          <iyy>0.00036395833</iyy> <iyz>0.0</iyz> <izz>0.0006125</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.7</radius>
+            <length>1.0</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Red</name>
+          </script>
+        </material>
+      </visual>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.7</radius>
+            <length>1.0</length>
+        </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.0</mu>
+              <mu2>0.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+
+  </model>
+</sdf>
